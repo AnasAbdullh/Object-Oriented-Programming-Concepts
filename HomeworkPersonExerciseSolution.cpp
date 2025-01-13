@@ -1,0 +1,106 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class clsPerson
+{
+private:
+    int _ID;
+    string _FirstName;
+    string _LastName;
+    string _Phone;
+    string _Email;
+    string _Subject;
+
+
+public:
+
+    clsPerson(int ID,string FisrtName,string LastName,string Email,string Phone) {
+        _ID = ID;
+        _FirstName = FisrtName;
+        _LastName = LastName;
+        _Email = Email;
+        _Phone = Phone;
+    }
+
+    int ID() {
+        return _ID;
+    }
+
+    void setFirstName(string firstName) {
+        _FirstName = firstName;
+    }
+
+    string FirstName() {
+        return   _FirstName ;
+    }
+
+    void setLastName(string LastName) {
+        _LastName = LastName;
+    }
+
+    string LastName() {
+        return _LastName;
+    }
+
+    void setEmail(string Email) {
+        _Email = Email;
+    }
+
+    string Email() {
+        return _Email ;
+    }
+
+    void setPhone(string Phone) {
+        _Phone = Phone;
+    }
+
+    string Phone() {
+        string _Phone;
+    }
+
+
+    void Print() {
+        cout << "\n";
+        cout << "Info" << endl;
+
+        cout << "___________________________" << endl;
+
+        cout << "ID         :" << _ID << endl;
+        cout << "FirstName  :" << _FirstName << endl;
+        cout << "LastName   :" << _LastName << endl;
+        cout << "Email      :" << _Email << endl;
+        cout << "Phone      :" << _Phone << endl;
+        cout << "\n";
+
+        cout << "___________________________" << endl;
+
+    }
+
+    void SendEmail(string Subject,string Message) {
+        cout << "The following message sent successfully to email: " << _Email << endl;
+        cout << "Subject :" << Subject << endl;
+        cout << "Body :" << Message << endl;
+        cout << "\n";
+
+    }
+
+    void SendSMS(string SMS) {
+        cout << "The following SMS sent successfully to phone: " << _Phone << endl;
+        cout << SMS << endl;
+    }
+
+};
+
+int main()
+{
+    clsPerson Person1(10,"Anas","Abdallah","anasabdlhaod@gmail.com","77476232");
+    Person1.Print();
+
+    Person1.SendEmail("Hi","How are you?");
+    Person1.SendSMS("How are you ?");
+
+    system("read");
+
+
+    return 0;
+}
