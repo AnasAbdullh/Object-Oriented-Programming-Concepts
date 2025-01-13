@@ -58,9 +58,8 @@ Contributing:
 
 Contributions are highly welcome! If you have additional examples or improvements, feel free to submit a pull request.
 
-License:
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+## License:
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -125,9 +124,9 @@ g++ ClassesAndObjects.cpp -o ClassesAndObjects
 
 المساهمات مرحب بها! إذا كان لديك أمثلة إضافية أو تحسينات، لا تتردد في تقديم طلب سحب.
 
-الترخيص:
+## الترخيص:
 
-هذا المشروع مرخص بموجب رخصة MIT. راجع ملف LICENSE للمزيد من التفاصيل.
+هذا المشروع مرخص بموجب رخصة MIT. راجع ملف [LICENSE] للمزيد من التفاصيل.
 
 ### ملاحظات إضافية:
 إذا كانت هناك أي تفاصيل إضافية أو ملاحظات مهمة، يمكن إضافتها لتحسين وصف المشروع.
